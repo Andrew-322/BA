@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Link Redirect</title>
+    <script type="text/javascript">
+        function randomLink() {
+            var links = [
+                "https://link1.com",
+                "https://link2.com",
+                "https://link3.com",
+                "https://link4.com",
+                "https://link5.com"
+            ];
+            var randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <button onclick="randomLink()">Go to a Random Link</button>
+</body>
+</html>
